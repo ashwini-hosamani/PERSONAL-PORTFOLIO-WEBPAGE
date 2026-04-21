@@ -52,5 +52,9 @@ The Personal Portfolio Website successfully demonstrates the ability to design a
 
 ❤️ Made with passion by Ashwini Hosamani
 
+
 ##OUTPUT 
 
+<img width="1311" height="588" alt="Image" src="https://github.com/user-attachments/assets/ba5d29af-3bfe-456f-ad01-ea6a689c2945" />
+<img width="1326" height="607" alt="Image" src="https://github.com/user-attachments/assets/28221ef5-9233-45e8-87b7-263d96c461bf" />
+<img width="1326" height="641" alt="Image" src="https://github.com/user-attachments/assets/98de4581-fdad-4eae-8a3c-894c56c68e21" />
