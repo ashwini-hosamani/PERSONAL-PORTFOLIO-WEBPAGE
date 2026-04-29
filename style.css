@@ -8,67 +8,64 @@
 
 body {
     scroll-behavior: smooth;
+    padding-top: 70px; /* FIX: prevents navbar overlap */
+    overflow-x: hidden;
 }
 
-/* ===== NAVBAR (FIXED CENTER ALIGNMENT) ===== */
+/* ===== NAVBAR ===== */
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;   /* vertical center */
-    height: 70px;          /* equal spacing top & bottom */
+    align-items: center;
+    height: 70px;
     padding: 0 60px;
     background: linear-gradient(45deg, #ff5722, #ff9800);
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1000;
 }
 
-/* Logo fix */
 .logo {
     color: white;
     font-size: 22px;
     font-weight: 600;
-    line-height: 1;
-    margin: 0;
 }
 
 /* Nav links */
-nav ul {
+.nav-links {
     display: flex;
-    align-items: center;
     list-style: none;
 }
 
-nav li {
+.nav-links li {
     margin-left: 20px;
 }
 
-nav a {
+.nav-links a {
     color: white;
     text-decoration: none;
 }
 
 /* ===== HOME ===== */
 .home {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 120px 60px 60px;
+    padding: 60px;
     background: linear-gradient(to right, #ffe0b2, #fff3e0);
 }
 
-/* Layout fix */
 .home-content {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
-/* Text left */
 .text {
     flex: 1;
 }
 
-/* Headings */
 .home h1 {
     font-size: 42px;
 }
@@ -83,16 +80,16 @@ nav a {
     max-width: 500px;
 }
 
-/* Highlight */
 .home span {
     color: #ff5722;
 }
 
-/* Image RIGHT FIX */
+/* Image */
 .profile-img {
     width: 260px;
+    max-width: 100%;
     border-radius: 50%;
-    margin-left: auto; /* pushes to right */
+    margin-left: auto;
 }
 
 /* Button */
@@ -108,7 +105,7 @@ nav a {
 
 /* ===== SECTIONS ===== */
 section {
-    padding: 90px 60px;
+    padding: 80px 60px;
 }
 
 h2 {
@@ -162,11 +159,22 @@ footer {
     nav {
         flex-direction: column;
         height: auto;
-        padding: 10px 20px;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 8px 0;
     }
 
     .home {
-        padding: 120px 20px;
+        padding: 40px 20px;
     }
 
     .home-content {
@@ -181,5 +189,18 @@ footer {
 
     .projects {
         flex-direction: column;
+    }
+
+    /* Smaller text for mobile */
+    .home h1 {
+        font-size: 28px;
+    }
+
+    .home h3 {
+        font-size: 18px;
+    }
+
+    .home p {
+        font-size: 14px;
     }
 }
