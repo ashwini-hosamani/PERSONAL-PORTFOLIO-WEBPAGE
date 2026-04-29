@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ===== BASIC SETUP ===== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashwini Portfolio</title>
 
-    <!-- ===== CSS LINK ===== -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- ===== GOOGLE FONT ===== -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -18,7 +15,12 @@
 <nav>
     <h2 class="logo">Ashwini</h2>
 
-    <ul class="nav-links">
+    <!-- HAMBURGER -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -31,7 +33,6 @@
 <section id="home" class="home">
     <div class="home-content">
 
-        <!-- TEXT LEFT -->
         <div class="text">
             <h1>Hi, I'm <span>Ashwini Hosamani</span></h1>
             <h3>Full Stack Developer</h3>
@@ -46,7 +47,6 @@
             <a href="#projects" class="btn">Explore Projects</a>
         </div>
 
-        <!-- IMAGE RIGHT -->
         <img src="profile.jpg" alt="Profile Photo" class="profile-img">
 
     </div>
@@ -55,10 +55,7 @@
 <!-- ===== ABOUT ===== -->
 <section id="about">
     <h2>About Me</h2>
-    <p>
-        I am passionate about building full-stack applications, with a strong focus 
-        on web development and database management.
-    </p>
+    <p>I am passionate about building full-stack applications.</p>
 </section>
 
 <!-- ===== SKILLS ===== -->
@@ -81,20 +78,17 @@
     <div class="projects">
         <div class="card">
             <h3>Clothing Website</h3>
-            <p>Responsive e-commerce site - TrendXpress24x7</p>
-            <a href="http://trendxpress24x7.ccbp.tech" target="_blank">View</a>
+            <p>TrendXpress24x7</p>
         </div>
 
         <div class="card">
             <h3>Travel Website</h3>
-            <p>TripXpress24x7 - Gallery + travel tips</p>
-            <a href="http://tripxpress24x7.ccbp.tech" target="_blank">View</a>
+            <p>TripXpress24x7</p>
         </div>
 
         <div class="card">
             <h3>Quiz App</h3>
-            <p>LuminaQuest interactive quiz platform</p>
-            <a href="https://ashwini-hosamani.github.io/INTERACTIVE-QUIZ-APPLICATION/" target="_blank">View</a>
+            <p>LuminaQuest</p>
         </div>
     </div>
 </section>
@@ -103,17 +97,21 @@
 <section id="contact">
     <h2>Contact</h2>
     <p>Email: ashwinimhosamani@gmail.com</p>
-    <p>Phone: 6360026284</p>
-    <p>
-        <a href="https://github.com/ashwini-hosamani">GitHub</a> |
-        <a href="https://www.linkedin.com/in/ashwini-hosamani-3a9419368">LinkedIn</a>
-    </p>
 </section>
 
-<!-- ===== FOOTER ===== -->
 <footer>
-    <p>© 2026 Ashwini Hosamani</p>
+    <p>© 2026 Ashwini</p>
 </footer>
+
+<!-- JS FOR MENU -->
+<script>
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+</script>
 
 </body>
 </html>
