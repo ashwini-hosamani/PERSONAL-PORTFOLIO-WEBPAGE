@@ -105,6 +105,22 @@ section {
     padding: 80px 20px;
 }
 
+h2 {
+    color: #ff5722;
+    margin-bottom: 20px;
+}
+
+/* CONTACT LINKS */
+#contact a {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* SKILLS */
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -117,6 +133,7 @@ section {
     border-radius: 20px;
 }
 
+/* PROJECTS */
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -128,6 +145,20 @@ section {
     background: #fff3e0;
     padding: 20px;
     border-radius: 10px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff5722;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #ff5722;
+    color: white;
 }
 
 /* MOBILE */
